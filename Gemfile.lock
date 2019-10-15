@@ -247,6 +247,9 @@ GEM
       minitest (>= 3.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
+    httparty (0.17.1)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
@@ -283,8 +286,10 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.13.1)
+    multi_xml (0.6.0)
     nenv (0.3.0)
     netrc (0.11.0)
+    news-api (0.2.0)
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
@@ -322,6 +327,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.6)
       actionpack (= 5.1.6)
       activesupport (= 5.1.6)
@@ -410,16 +420,19 @@ DEPENDENCIES
   fog (= 1.42)
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
+  httparty
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
   mini_magick (= 4.7.0)
   minitest (= 5.10.3)
   minitest-reporters (= 1.1.14)
+  news-api
   pg (= 0.20.0)
   puma (= 3.9.1)
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
+  rails_12factor (= 0.0.2)
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
@@ -431,4 +444,4 @@ DEPENDENCIES
   will_paginate (= 3.1.6)
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
